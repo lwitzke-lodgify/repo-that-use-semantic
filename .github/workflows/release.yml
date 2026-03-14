@@ -1,0 +1,12 @@
+name: Semantic Release
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  release:
+    uses: lwitzke-lodgify/semantic-versioning/.github/workflows/release.yml@master
+    secrets: inherit
