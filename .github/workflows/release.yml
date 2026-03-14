@@ -6,6 +6,11 @@ on:
       - main
       - master
 
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
 jobs:
   release:
     uses: lwitzke-lodgify/SemanticRelease.Test/.github/workflows/release.yml@main
